@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One|Lobster&display=swap');
+
+
+*{
+	box-sizing: border-box;
+}
+
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  /* background-image: url('../img/crossword.png'); */
+  background-image: linear-gradient(#B70027, #EBA96C, #F09C9F);
+  height: 100vh;
+  width: 100%;
+}
+
+div {
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  width: 100%;
+  height: 410px;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* Menu site */
+#leftNavbar {
+
+  background-color: #F3E37C;
+  padding-top: 0px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+  /* z-index: 1029; */
+}
+
+#menu ul {   
+  margin: 0px;
+  list-style: none;
+  padding: 0px;
+}
+
+#menu li a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0;
+    background: #F3E37C;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+#menu li a:hover:after {
+    width: 100%;
+    background: black;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav li {
+  list-style: none;
+  padding: 20px;
+  font-family: 'Francois One', sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+
+.titreMenu {
+  color: black;
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  margin: 0px 0px 0px 10px;
+}
+
+.mycv {
+  color: black;
+  font-family: 'Francois One', sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+.mycv:hover {
+  color: #B70027;
+}
+
+/* Bouton retour en haut de page */
+
+.scrollup {
+    display: none;
+    background: rgba(233, 198, 125, 0.59);
+    bottom: 82px;
+    position: fixed;
+    right: 10px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    font-size: 13px;
+    color: black !important;
+    text-transform: lowercase;
+    font-weight: 600;
+    padding: 2px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+/* Main */
+
+main {
+  float: right;
+}
+
+#Accueil {
+  margin: 0px 0px 80px 0px;
+}
+
+.presentation {
+  margin: 0px 0px 80px;
+  padding: 0px;
+}
+
+.titre2 {
+  margin: 0px 0px 80px;
+  padding:0px;
+  font-family: 'Lobster', cursive;
+  font-size: 2.8em;
+  color: white;
+}
+
+.titre {
+  background-image: url("../img/bureau-clavier.jpg");
+  background-size: 100% 400px;
+  height: 410px;
+}
+
+.emoticonGirl {
+  width: 50px;
+  height: 50px;
+}
+
+.emojiPenseur {
+  width: 70px;
+  height: 50px;
+}
+
+#para {
+  color: black;
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+
+.circular-sb {
+  width: 600px;
+  height: 200px;
+  background-image: linear-gradient(to bottom right, white, #F3E37C );
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 900;
+  font-family: arial;
+  position: relative;
+}
+
+
+
+.circle1 {
+  position: absolute;
+  width: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  right: -35px;
+  bottom: 23px;
+  float: right;
+}
+
+.circle1:before {
+  border: 5px solid #F3E37C;
+  content: "";
+  position: absolute;
+  width: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  right: 0px;
+  bottom: 0px;
+}
+
+.circle2 {
+  position: absolute;
+  width: 5px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  right: -68px;
+  bottom: 5px;
+  border: 5px solid #F3E37C;
+}
+
+.circle3 {
+  position: absolute;
+  width: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  left: -10px;
+  bottom: 10px;
+}
+
+.circle3:before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  right: 0px;
+  bottom: 0px;
+  border: 5px solid #F3E37C;
+}
+
+.circle4 {
+  border: 5px solid #F3E37C;
+  position: absolute;
+  width: 5px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  left: -60px;
+  bottom: 5px;
+}
+
+.circle5 {
+  position: absolute;
+  width: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  right: -35px;
+  bottom: 23px;
+}
+
+.circle5:before {
+  border: 5px solid #F3E37C;
+  content: "";
+  position: absolute;
+  width: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  right: 0px;
+  bottom: 0px;
+}
+
+.circle6 {
+  border: 5px solid #F3E37C;
+  position: absolute;
+  width: 5px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  right: -68px;
+  bottom: 5px;
+}
+
+.circle1, .circle3, .circle5 {
+  opacity: 0;
+  animation-name: twinkle;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes twinkle {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.circle2, .circle4, .circle6 {
+  opacity: 1;
+  animation-name: twinkle2;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes twinkle2 {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* Footer du site */
+
+footer {
+  float: right;
+}
+
+#Contact {
+  padding: 80px 0px 0px 0px;
+}
+
+.footer {
+  margin: 0px;
+  padding: 0px;
+}
+
+.html, .css3, .js, .php, .jquery, .bootstrap {
+  width: 100px;
+  height: 90px;
+  margin: 40px;
+}
+
+.mail {
+  width: 70px;
+  height: 50px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.sitePerso {
+  margin-top: 15px;
+  color: black;
+  font-family: 'Lobster', cursive;
+  font-size: 1.5em;
+}
+
+.reseau {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+}
+
+/* Formulaire de contact */
+
+.modal-content {
+  background-color: #F3E37C;
+}
+
+.modal-title {
+  color: black;
+  font-family: 'Lobster', cursive;
+  font-size: 35px;
+  text-align: center;
+}
+
+.modal-body label {
+  color: black;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+.modal-body input {
+  width: 400px;
+  border: solid black 1px;
+  background-color: transparent;
+}
+
+textarea {
+  width: 470px;
+  height: 100px;
+  border: solid black 1px;
+  background-color: transparent;
+}
+
+textarea::placeholder {
+  color: black;
+  font-family: 'Francois', cursive;
+}
+
+.modal-body .btn {
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #F3E37C;
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+  font-weight: bold;
+  width: 130px;
+}
+
+
+
+
+

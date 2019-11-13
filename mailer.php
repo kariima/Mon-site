@@ -13,7 +13,7 @@ if(isset($_POST['email']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = 'tls';
     $mail->Username   = 'karima.lafria@gmail.com';
-    $mail->Password   = 'mouzoune26';
+    $mail->Password   = 'hewfmmnqflcqklze';
     $mail->Port       = 587;
 
     $mail->setFrom($_POST['email'], $_POST['nom']);

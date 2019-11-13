@@ -12,12 +12,12 @@ if(isset($_POST['email']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
     $mail->HOST = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = 'tls';
-    $mail->Username   = 'karima.lafria@gmail.com';
-    $mail->Password   = 'hewfmmnqflcqklze';
+    $mail->Username   = 'ici mon adresse mail';
+    $mail->Password   = 'ici mdp application';
     $mail->Port       = 587;
 
     $mail->setFrom($_POST['email'], $_POST['nom']);
-    $mail->addAddress('karima.lafria@gmail.com', 'karima');
+    $mail->addAddress('ici mon adresse mail', 'mon nom');
     $mail->Subject = 'Email de mon site web';
     $mail->Body    = $_POST['message'];
     $mail->send();
